@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 //Response from search endpoint
-data class SearchResponse (
+data class SearchResponse(
     val total_count: Int,
     val items: ArrayList<RepositoryModel>
 )
@@ -21,6 +21,7 @@ data class RepositoryModel(
     val forks_count: Int,
     val score: Double
 )
+
 @Parcelize
 data class OwnerModel(
     val login: String,
